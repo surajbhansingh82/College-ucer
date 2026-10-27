@@ -4,3 +4,29 @@ __pycache__/
 session.json
 *.csv
 *.png
+
+cat > .gitignore << 'EOF'
+# Debug files
+debug.py
+debug_dashboard.html
+dashboard_logged_in.html
+test_login.py
+
+# Sensitive data
+url_*.txt
+
+# Session/cache files
+session_*.json
+captcha_*.png
+error_*.png
+data_*.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+EOF
